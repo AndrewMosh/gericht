@@ -9,23 +9,24 @@ import ttf2woff2 from "ttf2woff2";
 
 const ttfToWoff = async () => {
     fs.readdir(paths.ttf2Woff.src, (err, files) => {
+        if (err) {
+            console.error("Error reading directory:", err);
+            return;
+        }
+
         files.forEach((file) => {
             if (path.extname(file).toLowerCase() === ".ttf") {
-                const ttfBuffer = fs.readFileSync(paths.ttf2Woff.src + file);
+                const ttfBuffer = fs.readFileSync(path.join(paths.ttf2Woff.src, file));
 
-                fs.writeFileSync(
-                    paths.ttf2Woff.dist + file.replace(".ttf", ".woff"),
-                    ttf2woff(ttfBuffer)
-                );
+                // Convert to .woff
+                const woff = ttf2woff(ttfBuffer);
+                fs.writeFileSync(path.join(paths.ttf2Woff.dist, file.replace(".ttf", ".woff")), Buffer.from(woff));
 
-                fs.writeFileSync(
-                    paths.ttf2Woff.dist + file.replace(".ttf", ".woff2"),
-                    ttf2woff2(file)
-                );
+                // Convert to .woff2
+                const woff2 = ttf2woff2(ttfBuffer);
+                fs.writeFileSync(path.join(paths.ttf2Woff.dist, file.replace(".ttf", ".woff2")), woff2);
             }
         });
-
-        if (err) console.log(err);
     });
 };
 
