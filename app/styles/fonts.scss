@@ -1,1 +1,6 @@
-@include font("Cormorant", "CormorantUpright-Regular", 400, normal);
+@include font("CormorantUpright Light", "CormorantUpright-Light", "300", "Normal");
+@include font("CormorantUpright Bold", "CormorantUpright-Bold", "700", "Normal");
+@include font("CormorantUpright Medium", "CormorantUpright-Medium", "500", "Normal");
+@include font("CormorantUpright Regular", "CormorantUpright-Regular", "400", "Normal");
+@include font("CormorantUpright SemiBold", "CormorantUpright-SemiBold", "600", "Normal");
+@include font("Open Sans", "OpenSans_Condensed-Regular", "400", "Normal");
