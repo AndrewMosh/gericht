@@ -1,0 +1,142 @@
+.header {
+    color: $white;
+    padding: 22px 0;
+    font-family: $fontSecond;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            gap: 20px;
+        }
+    }
+
+    &__logo {
+        font-size: 24px;
+        font-weight: 500;
+        font-family: "Cormorant";
+        text-transform: uppercase;
+
+        @include for-mobile {
+            font-size: 18px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &__nav-mobile {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.45);
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 5;
+        justify-content: center;
+
+        .nav-mobile__list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .nav-mobile__item--line {
+            text-align: center;
+        }
+
+        .nav-mobile__link {
+            color: $white;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        font-size: 15px;
+        font-weight: 400;
+        gap: 32px;
+        justify-content: space-between;
+
+        .nav__list {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: space-around;
+
+            .nav__item {
+                margin-left: 20px;
+
+                .nav__link {
+                    color: $white;
+                    text-decoration: none;
+                    font-size: 18px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 20px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__button {
+        color: $white;
+        padding: 0;
+        background: none;
+        cursor: pointer;
+    }
+
+    &__burger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+
+        .burger__line {
+            width: 25px;
+            height: 3px;
+            background-color: $white;
+            margin: 3px 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__line {
+            transform: rotate(90deg);
+        }
+
+        &__burger {
+            display: flex;
+        }
+
+        &__nav-mobile {
+            display: none;
+        }
+
+        &__nav-mobile--active {
+            display: flex;
+            color: white;
+        }
+    }
+}
