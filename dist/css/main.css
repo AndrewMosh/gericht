@@ -1805,6 +1805,38 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 30%;
 }
 
+.hours {
+  height: 100vh;
+  background-image: url("../../../images/BG-2.png");
+  text-align: center;
+  position: relative;
+  background-size: cover;
+}
+
+.hours__container,
+.hours__wrapper {
+  height: 100%;
+}
+
+.hours__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.hours__title {
+  font-size: 64px;
+  color: #dcca87;
+  line-height: 130%;
+}
+
+.hours__text {
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 130%;
+}
+
 @media (max-width: 1280px) {
   .container {
     width: 992px;
@@ -1975,6 +2007,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
   .beverages__subtitle {
+    font-size: 44px;
+    line-height: 100%;
+  }
+
+  .hours__title {
     font-size: 44px;
     line-height: 100%;
   }
