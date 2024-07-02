@@ -1216,6 +1216,7 @@ a {
 
 input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
+  font-family: "CormorantUpright Regular";
 }
 
 .container {
@@ -1649,7 +1650,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   top: -20px;
   right: 40px;
-  max-width: 100px;
 }
 
 .booking__wrapper {
@@ -1657,7 +1657,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: 1px solid #dcca87;
   margin: 20px auto;
   padding: 48px;
-  max-width: 1100px;
 }
 
 .booking__reservation {
@@ -1710,6 +1709,68 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 16px;
   text-transform: capitalize;
   padding: 8px 30px;
+}
+
+.about {
+  background-image: url("../../../images/BG-1.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__seal {
+  position: absolute;
+  top: -20px;
+  left: 80px;
+}
+
+.about__wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.about__content,
+.about__image {
+  flex: 0 0 50%;
+}
+
+.about__content {
+  padding-top: 40px;
+}
+
+.about__image {
+  padding-right: 40px;
+}
+
+.about__title {
+  font-size: 23px;
+  color: #ffffff;
+  padding-top: 40px;
+}
+
+.about__spoon {
+  padding: 8px 0;
+}
+
+.about__subtitle {
+  font-size: 64px;
+  color: #dcca87;
+  line-height: 130%;
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+
+.about__text {
+  color: #aaaaaa;
+  font-size: 16px;
+  padding-bottom: 32px;
+}
+
+.about__button {
+  background-color: #dcca87;
+  text-transform: capitalize;
+  padding: 8px 32px;
 }
 
 @media (max-width: 1280px) {
@@ -1868,8 +1929,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: white;
   }
 
-  .booking__seal {
-    max-width: 80px;
+  .about__wrapper {
+    display: block;
+  }
+
+  .about__image {
+    display: none;
+  }
+
+  .about__subtitle {
+    font-size: 44px;
+    line-height: 100%;
   }
 }
 

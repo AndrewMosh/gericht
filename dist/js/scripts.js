@@ -16,7 +16,7 @@
   \***********************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\nconst dateInput = document.getElementById(\"start\");\ndateInput.addEventListener(\"click\", () => {\n  console.log(\"Start\");\n  dateInput.showPicker();\n});\n\n//# sourceURL=webpack://gulp-v5-starter/./app/scripts/datePicker.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst dateInput = document.getElementById(\"start\");\ndateInput.addEventListener(\"click\", () => {\n  dateInput.showPicker();\n});\n\n//# sourceURL=webpack://gulp-v5-starter/./app/scripts/datePicker.js?");
 
 /***/ }),
 

@@ -44,6 +44,7 @@ a {
 /*А так убрать*/
 input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
+    font-family: $fontMain;
 }
 
 .container {

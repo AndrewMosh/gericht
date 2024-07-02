@@ -1,0 +1,74 @@
+.about {
+    background-image: url("../../../images/BG-1.png");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__seal {
+        position: absolute;
+        top: -20px;
+        left: 80px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        @include for-mobile {
+            display: block;
+        }
+    }
+
+    &__content,
+    &__image {
+        flex: 0 0 50%;
+    }
+
+    &__content {
+        padding-top: 40px;
+    }
+
+    &__image {
+        padding-right: 40px;
+
+        @include for-mobile {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-size: 23px;
+        color: $white;
+        padding-top: 40px;
+    }
+
+    &__spoon {
+        padding: 8px 0;
+    }
+
+    &__subtitle {
+        font-size: $font-size-title;
+        color: $yellow;
+        line-height: 130%;
+        padding: 20px 0;
+        text-transform: capitalize;
+
+        @include for-mobile {
+            font-size: $font-size-title-mobile;
+            line-height: 100%;
+        }
+    }
+
+    &__text {
+        color: #aaaaaa;
+        font-size: 16px;
+        padding-bottom: 32px;
+    }
+
+    &__button {
+        background-color: $yellow;
+        text-transform: capitalize;
+        padding: 8px 32px;
+    }
+}
