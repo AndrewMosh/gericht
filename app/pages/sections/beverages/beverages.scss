@@ -1,0 +1,44 @@
+.beverages {
+    background-color: $bg;
+    color: $white;
+    text-align: center;
+
+    &__title {
+        font-size: $font-size-title-small;
+        text-transform: capitalize;
+    }
+
+    &__spoon {
+        padding: 8px 0;
+    }
+
+    &__subtitle {
+        font-size: $font-size-title;
+        color: $yellow;
+        line-height: 130%;
+        padding-bottom: 55px;
+
+        @include for-mobile {
+            font-size: $font-size-title-mobile;
+            line-height: 100%;
+        }
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+
+        @media (max-width: 675px) {
+            justify-content: center;
+        }
+
+        img {
+            width: 30%;
+
+            @media (max-width: 675px) {
+                width: 20%;
+            }
+        }
+    }
+}
