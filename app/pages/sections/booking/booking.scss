@@ -1,0 +1,75 @@
+.booking {
+    background-color: $bg;
+    position: relative;
+    text-align: center;
+
+    &__seal {
+        position: absolute;
+        top: -20px;
+        right: 40px;
+        max-width: 100px;
+        @include for-mobile {
+            max-width: 80px;
+        }
+    }
+
+    &__wrapper {
+        background-color: $bgBooking;
+        border: 1px solid $yellow;
+        margin: 20px auto;
+        padding: 48px;
+        max-width: 1100px;
+    }
+
+    &__reservation {
+        color: $white;
+        font-size: 23px;
+    }
+
+    &__spoon {
+        padding: 10px 0;
+    }
+
+    &__title {
+        font-size: $font-size-title;
+        color: $yellow;
+        line-height: 130%;
+        padding-bottom: 64px;
+        text-transform: capitalize;
+    }
+
+    &__inner {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    &__persons,
+    &__time,
+    &__date {
+        flex: 0 0 30.2%;
+        padding: 16px;
+        background-color: $bg;
+        color: $white;
+        border: 1px solid $yellow;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: relative;
+        display: inline-block;
+        background-image: url("../../../images/svg/caret.svg");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        background-size: 20px;
+        font-family: $fontMain;
+    }
+
+    &__button {
+        margin-top: 64px;
+        background-color: $yellow;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: capitalize;
+        padding: 8px 30px;
+    }
+}

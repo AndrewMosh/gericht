@@ -41,6 +41,11 @@ a {
     line-height: 120%;
 }
 
+/*А так убрать*/
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
 .container {
     position: relative;
     width: 1248px;

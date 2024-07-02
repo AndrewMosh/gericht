@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 html,
 body,
 div,
@@ -229,6 +231,7 @@ button,
 select,
 a {
   -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
 }
 
 input[type="submit"] {
@@ -1209,6 +1212,12 @@ a {
   line-height: 120%;
 }
 
+/*А так убрать*/
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
 .container {
   position: relative;
   width: 1248px;
@@ -1552,7 +1561,6 @@ a {
   color: #ffffff;
   padding: 0;
   background: none;
-  cursor: pointer;
   font-family: "Open Sans";
   letter-spacing: 2px;
 }
@@ -1629,6 +1637,79 @@ a {
   font-size: 16px;
   text-align: center;
   cursor: pointer;
+}
+
+.booking {
+  background-color: #040404;
+  position: relative;
+  text-align: center;
+}
+
+.booking__seal {
+  position: absolute;
+  top: -20px;
+  right: 40px;
+  max-width: 100px;
+}
+
+.booking__wrapper {
+  background-color: #0c0c0c;
+  border: 1px solid #dcca87;
+  margin: 20px auto;
+  padding: 48px;
+  max-width: 1100px;
+}
+
+.booking__reservation {
+  color: #ffffff;
+  font-size: 23px;
+}
+
+.booking__spoon {
+  padding: 10px 0;
+}
+
+.booking__title {
+  font-size: 64px;
+  color: #dcca87;
+  line-height: 130%;
+  padding-bottom: 64px;
+  text-transform: capitalize;
+}
+
+.booking__inner {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.booking__persons,
+.booking__time,
+.booking__date {
+  flex: 0 0 30.2%;
+  padding: 16px;
+  background-color: #040404;
+  color: #ffffff;
+  border: 1px solid #dcca87;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  display: inline-block;
+  background-image: url("../../../images/svg/caret.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+  font-family: "CormorantUpright Regular";
+}
+
+.booking__button {
+  margin-top: 64px;
+  background-color: #dcca87;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 8px 30px;
 }
 
 @media (max-width: 1280px) {
@@ -1785,6 +1866,10 @@ a {
   .header__nav-mobile--active {
     display: flex;
     color: white;
+  }
+
+  .booking__seal {
+    max-width: 80px;
   }
 }
 

@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./app/scripts/datePicker.js":
+/*!***********************************!*\
+  !*** ./app/scripts/datePicker.js ***!
+  \***********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\nconst dateInput = document.getElementById(\"start\");\ndateInput.addEventListener(\"click\", () => {\n  console.log(\"Start\");\n  dateInput.showPicker();\n});\n\n//# sourceURL=webpack://gulp-v5-starter/./app/scripts/datePicker.js?");
+
+/***/ }),
+
 /***/ "./app/scripts/main.js":
 /*!*****************************!*\
   !*** ./app/scripts/main.js ***!
   \*****************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu.js */ \"./app/scripts/menu.js\");\n\n\n//# sourceURL=webpack://gulp-v5-starter/./app/scripts/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu.js */ \"./app/scripts/menu.js\");\n/* harmony import */ var _datePicker_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./datePicker.js */ \"./app/scripts/datePicker.js\");\n\n\n\n//# sourceURL=webpack://gulp-v5-starter/./app/scripts/main.js?");
 
 /***/ }),
 
