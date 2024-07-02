@@ -1873,6 +1873,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
+@media (max-width: 672px) {
+  .booking__title {
+    font-size: 44px;
+  }
+
+  .booking__inner {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 400px) {
   .content.no-mobile .table__wrapper table {
     font-size: 9px !important;
