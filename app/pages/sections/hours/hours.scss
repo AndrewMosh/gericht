@@ -18,18 +18,10 @@
     }
 
     &__title {
-        font-size: $font-size-title;
-        color: $yellow;
-        line-height: 130%;
-
-        @include for-mobile {
-            font-size: $font-size-title-mobile;
-            line-height: 100%;
-        }
+        @include title();
     }
 
     &__text {
-        color: $white;
         font-size: 32px;
         line-height: 130%;
     }

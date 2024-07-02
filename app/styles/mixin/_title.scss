@@ -1,0 +1,12 @@
+@mixin title($pb: null, $color: $yellow) {
+    font-size: $font-size-title;
+    line-height: 130%;
+    padding-bottom: $pb;
+    color: $color;
+    text-transform: capitalize;
+
+    @include for-mobile {
+        font-size: $font-size-title-mobile;
+        line-height: 100%;
+    }
+}

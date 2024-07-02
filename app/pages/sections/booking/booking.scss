@@ -17,7 +17,6 @@
     }
 
     &__reservation {
-        color: $white;
         font-size: 23px;
     }
 
@@ -26,15 +25,7 @@
     }
 
     &__title {
-        font-size: $font-size-title;
-        color: $yellow;
-        line-height: 130%;
-        padding-bottom: 64px;
-        text-transform: capitalize;
-
-        @media (max-width: 672px) {
-            font-size: $font-size-title-mobile;
-        }
+        @include title(64px);
     }
 
     &__inner {
@@ -68,11 +59,6 @@
     }
 
     &__button {
-        margin-top: 64px;
-        background-color: $yellow;
-        font-weight: 700;
-        font-size: 16px;
-        text-transform: capitalize;
-        padding: 8px 30px;
+        @include button;
     }
 }

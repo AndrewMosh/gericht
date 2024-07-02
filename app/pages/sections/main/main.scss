@@ -6,7 +6,6 @@
     &__tags {
         display: flex;
         gap: 40px;
-        color: $white;
         font-size: 18px;
         font-family: $fontSecond;
         letter-spacing: 2px;
@@ -18,7 +17,6 @@
 
     &__wrapper {
         position: relative;
-        color: $white;
         border: 1px solid $yellow;
         max-width: 460px;
         margin: 0 auto 53px auto;

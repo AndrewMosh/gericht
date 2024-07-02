@@ -39,7 +39,6 @@
 
     &__title {
         font-size: 23px;
-        color: $white;
         padding-top: 40px;
     }
 
@@ -48,9 +47,7 @@
     }
 
     &__subtitle {
-        font-size: $font-size-title;
-        color: $yellow;
-        line-height: 130%;
+        @include title($white);
         padding: 20px 0;
         text-transform: capitalize;
 
@@ -67,8 +64,6 @@
     }
 
     &__button {
-        background-color: $yellow;
-        text-transform: capitalize;
-        padding: 8px 32px;
+        @include button;
     }
 }

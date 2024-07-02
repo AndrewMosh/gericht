@@ -1,6 +1,5 @@
 .beverages {
     background-color: $bg;
-    color: $white;
     text-align: center;
 
     &__title {
@@ -13,15 +12,7 @@
     }
 
     &__subtitle {
-        font-size: $font-size-title;
-        color: $yellow;
-        line-height: 130%;
-        padding-bottom: 55px;
-
-        @include for-mobile {
-            font-size: $font-size-title-mobile;
-            line-height: 100%;
-        }
+        @include title(55px);
     }
 
     &__images {

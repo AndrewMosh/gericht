@@ -1,0 +1,109 @@
+.menu {
+    background-color: $bg;
+    position: relative;
+
+    &__seal {
+        position: absolute;
+        top: -50px;
+        right: 40px;
+
+        &--bottom {
+            position: absolute;
+            bottom: -130px;
+            left: 40px;
+        }
+    }
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    &__phrase {
+        font-size: $font-size-title-small;
+    }
+
+    &__spoon {
+        padding: 8px 0;
+    }
+
+    &__title {
+        @include title(54px);
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+
+        @media (max-width: 1276px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__wines,
+    &__coctails {
+        flex: 0 0 30.33%;
+
+        @media (max-width: 1276px) {
+            flex: 0 0 50%;
+        }
+
+        @media (max-width: 1025px) {
+            flex: 0 0 100%;
+        }
+    }
+
+    &__subtitle {
+        @include title(30px, $white);
+    }
+
+    &__wines,
+    &__coctails {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 8px;
+
+        @media (max-width: 311px) {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        img {
+            flex: 0 0 5.2%;
+        }
+    }
+
+    &__name {
+        flex: 0 0 50.2%;
+        text-align: left;
+        font-size: $font-size-title-small;
+        color: $yellow;
+    }
+
+    &__price {
+        flex: 0 0 5.2%;
+        font-weight: 700;
+        font-size: $font-size-title-small;
+    }
+
+    &__tags {
+        display: flex;
+        gap: 5px;
+        font-size: 16px;
+        font-family: $fontSecond;
+        letter-spacing: 1px;
+        color: #aaaaaa;
+    }
+
+    &__button {
+        @include button;
+    }
+}
