@@ -1,0 +1,61 @@
+.newsletter {
+    background-color: $bg;
+
+    &__wrapper {
+        background-color: $bgBooking;
+        padding: 64px 0;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: $font-size-title-small;
+    }
+
+    &__spoon {
+        padding: 8px 0 20px 0;
+    }
+
+    &__subtitle {
+        @include title(24px);
+    }
+
+    &__text {
+        font-family: $fontSecond;
+        font-size: 16px;
+        padding-bottom: 64px;
+        letter-spacing: 1px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        max-width: 796px;
+        margin: 0 auto;
+        align-items: center;
+        gap: 16px;
+
+        @media (max-width: 697px) {
+            flex-direction: column;
+        }
+    }
+
+    &__input {
+        flex: 0 0 80%;
+        background-color: $bg;
+        padding: 16px;
+        border: 1px solid rgb(170, 170, 170);
+
+        @media (max-width: 697px) {
+            width: 100%;
+        }
+
+        &::placeholder {
+            color: rgb(170, 170, 170);
+        }
+    }
+
+    &__button {
+        @include button(0);
+        flex: 0 0 10%;
+    }
+}
