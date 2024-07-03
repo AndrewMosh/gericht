@@ -1,0 +1,54 @@
+.contact {
+    background-image: url("../../../images/BG-1.png");
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 477px) {
+            flex-direction: column;
+        }
+    }
+
+    &__inner,
+    &__image {
+        flex: 0 0 50%;
+    }
+
+    &__title {
+        font-size: $font-size-title-small;
+    }
+
+    &__spoon {
+        padding: 8px 0 20px 0;
+    }
+
+    &__subtitle {
+        @include title(64px);
+    }
+
+    &__address {
+        color: rgb(170, 170, 170);
+        padding-bottom: 32px;
+        font-family: $fontSecond;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    &__hours {
+        font-size: $font-size-title-small;
+        color: $yellow;
+        padding-bottom: 16px;
+    }
+    &__text {
+        padding-bottom: 16px;
+        font-family: $fontSecond;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    &__button {
+        @include button;
+    }
+}
