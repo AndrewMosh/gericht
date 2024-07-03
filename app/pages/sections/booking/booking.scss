@@ -11,7 +11,7 @@
 
     &__wrapper {
         background-color: $bgBooking;
-        border: 1px solid $yellow;
+        border: 1px solid rgba(220, 202, 135, 0.2);
         margin: 40px auto;
         padding: 48px;
     }
@@ -45,7 +45,7 @@
         padding: 16px;
         background-color: $bg;
         color: $white;
-        border: 1px solid $yellow;
+        border: 1px solid rgb(170, 170, 170);
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;

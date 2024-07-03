@@ -1,0 +1,30 @@
+.footer {
+    background-image: url("../../images/BG-1.png");
+    padding: 128px 0px;
+
+    @include for-tablet {
+        padding: 80px 0px;
+    }
+
+    @include for-mobile {
+        padding: 38px 0px;
+    }
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    &__logo {
+        @include title(32px);
+    }
+
+    &__spoon {
+        padding: 26px 0;
+    }
+
+    &__socials {
+        img {
+            cursor: pointer;
+        }
+    }
+}
